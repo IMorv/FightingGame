@@ -1,5 +1,4 @@
-const musica = new Audio();
-musica.src = './sons/musica2.wav'
+
 function rectangularCollision({
     rectangle1,
     recntangle2
@@ -33,7 +32,7 @@ function decreaseTimer() {
         timerId = setTimeout(decreaseTimer, 1000)
     timer--
     document.querySelector('#timer').innerHTML = timer
-    musica.play()
+
     }
     if (timer ===0) {
         musica.pause()
